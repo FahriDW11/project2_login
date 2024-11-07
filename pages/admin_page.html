@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/style/admin.css" />
+    <title>Admin KIKE</title>
+  </head>
+  <body onload="checkAuthAdmin()">
+    <nav>
+      <img src="../assets/image/icons/back1-icon.png" alt="back" onclick="logoutAdmin()" />
+      <h4>Admin KIKE</h4>
+    </nav>
+    <div class="container">
+      <h3>USERS LIST</h3>
+      <table id="users_list">
+        <tr>
+          <th>USERNAME</th>
+          <th>PASSWORD</th>
+          <th></th>
+        </tr>
+      </table>
+    </div>
+    <div id="validation_overlay" class="overlay">
+      <div class="validation_menu">
+        <p>Are you sure you want to permanently delete this account?</p>
+        <div id="validation_buttons">
+          <button id="cancel_button" class="cancel bttn">cancel</button>
+        </div>
+      </div>
+    </div>
+    <div id="auth_overlay" class="overlay auth">
+      <!-- <div> -->
+      <p>You are not admin</p>
+      <a href="landing_page.html">OK</a>
+      <!-- </div> -->
+    </div>
+    <script src="../assets/script/admin.js"></script>
+  </body>
+</html>

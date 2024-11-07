@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../assets/style/dashboard.css" />
+    <script src="../auth/auth.js"></script>
+  </head>
+  <body onload="checkAuth()">
+    <!-- Navbar -->
+    <nav>
+      <div class="logo">KIKE ✓</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <p id="nav_user"></p>
+      <a class="logout-link" onclick="logout()">Logout</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Find Your Style</h1>
+        <p>Explore our latest collection.</p>
+        <button>Shop Now</button>
+      </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured-products">
+      <h2>New Arrivals</h2>
+      <div class="product-grid">
+        <div class="product">
+          <img src="../assets/image/img_dashboard/product1.jpeg" alt="Product 1" />
+          <p>
+            <b>Kike Syling Care</b><br />
+            Add Instant energy to your style
+          </p>
+        </div>
+        <div class="product">
+          <img src="../assets/image/img_dashboard/product2.jpeg" alt="Product 2" />
+          <p>
+            <b>Kike Black Apocalypse</b><br />
+            Add Instant energy to your style
+          </p>
+        </div>
+        <div class="product">
+          <img src="../assets/image/img_dashboard/product3.jpeg" alt="Product 3" />
+          <p>
+            <b>Kike Pegasus Plus</b><br />
+            Add Instant energy to your style
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 MyBrand. All rights reserved.</p>
+    </footer>
+    <script src="../assets/script/dashboard.js"></script>
+  </body>
+</html>

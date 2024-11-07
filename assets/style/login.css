@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.landing-page, .auth-form, .dashboard {
+    margin-top: 100px;
+}
+
+h1, h2 {
+    color: #111;
+}
+
+p {
+    color: #555;
+}
+
+button {
+    background-color: #111;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.auth-form {
+    padding-top: 40px;
+}
+
+.auth-form button {
+    border-radius: 5px;
+}
+
+.auth-form input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 48%;
+    border-radius: 8px;
+}
